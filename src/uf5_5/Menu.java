@@ -9,8 +9,9 @@ package uf5_5;
  * @author ramon
  */
 public class Menu {
+
     public static void main(String[] args) {
         UF5_5 u = new UF5_5();
-u.CrearRandomNum();
+        u.CrearRandomNum();
     }
 }
