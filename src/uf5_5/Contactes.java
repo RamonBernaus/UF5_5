@@ -31,12 +31,13 @@ public class Contactes {
         }
         nomCont = BuscarNom();
         if (Contactes.containsKey(nomCont)){
-            System.out.println(Contactes.get(BuscarNom()));
+            System.out.println(Contactes.get(nomCont));
         } else {
-            System.out.println("no");
+            for (int i = 0; i < nomCont.length(); i++) { 
         }
-        
-        return 0;
+        }
+       
+     return 0;
     }
 
     public int DemanarNumero() {
