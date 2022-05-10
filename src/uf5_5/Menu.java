@@ -11,7 +11,7 @@ package uf5_5;
 public class Menu {
 
     public static void main(String[] args) {
-        UF5_5 u = new UF5_5();
+        Ex1 u = new Ex1();
         u.CrearRandomNum();
     }
 }
