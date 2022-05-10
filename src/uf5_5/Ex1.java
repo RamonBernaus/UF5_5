@@ -21,7 +21,7 @@ public class Ex1 {
 
     }
 
-    public int CrearRandomNum() {
+    public int Comptador() {
         Scanner s = new Scanner(System.in);
         int numero = 0;
         for (int i = 0; i < 1000; i++) {

@@ -11,7 +11,11 @@ package uf5_5;
 public class Menu {
 
     public static void main(String[] args) {
-        Ex1 u = new Ex1();
-        u.CrearRandomNum();
+        Ex1 ex1 = new Ex1();
+        System.out.println("Ex1 :");
+        ex1.Comptador();
+        Contactes ex2 = new Contactes();
+        System.out.println("Ex2 :");
+        ex2.Contcates();
     }
 }
