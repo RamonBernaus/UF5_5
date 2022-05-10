@@ -4,6 +4,8 @@ l'emmagatzematge, llistat i cerca de nombre de telèfons per nom.*/
 package uf5_5;
 
 import java.util.*;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -19,7 +21,8 @@ public class Contactes {
     private String nom;
     private int numeroTelf;
     private String nomCont;
-    public int Contcates() {
+
+    public String Contcates() {
         Map<String, Integer> Contactes = new HashMap<String, Integer>();
 
         System.out.println("Quants numeros de telefon vols guardar? ");
@@ -30,15 +33,16 @@ public class Contactes {
             Contactes.put(nom, numeroTelf);
         }
         nomCont = BuscarNom();
-        if (Contactes.containsKey(nomCont)){
+        if (Contactes.containsKey(nomCont)) {
             System.out.println(Contactes.get(nomCont));
         } else {
-            for (int i = 0; i < nomCont.length(); i++) { 
-        }
-        }
-       
-     return 0;
+      Pattern p = Pattern.compile(nom);
+      Matcher m = p.matcher(nomCont);
+if (m.find())
+         System.err.println("Has escrit " + nomCont + "no volies dir " + nom + "?");
     }
+return nom;
+}
 
     public int DemanarNumero() {
         int numeroTelf;
